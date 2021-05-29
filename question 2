@@ -1,0 +1,31 @@
+# find maximum no of 1's in an array of 0's and 1's..
+
+<script>
+function findSubArray(arr,n)
+{ 
+     let sum =0;
+     let maxSize=-1,startindex=0;
+     let endindex=0;
+     for(let i=0;i<n-1;i++)
+     { 
+        sum=(arr[i]==0) ? -1 : 1;
+        for(let j=i+1;j<n;j++)
+        { 
+           if(arr[j]==0);
+              sum+=-1;
+           else
+              sum+=1;
+           if(sum==0 && maxsize<j-i+1){
+              maxsize=j-i+1;
+              startindex=i;
+            }
+         }
+      }
+      endindex=startindex+maxsize-1;
+      if (maxsize==-1)
+         document.write("no such subarray");
+      else
+         document.write(startindex+"to"+endindex);
+      return maxsize;
+}
+</script>
