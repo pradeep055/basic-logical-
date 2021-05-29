@@ -1,0 +1,13 @@
+# program to print only even no from array
+
+<!DOCTYPE html>
+<html>
+<script>
+    let getEvenNumber = () =>{
+        const arr=[4,5,7,8,14,45,76];
+        let the_evens=arr.filter(number=>number%2==0);
+        ducument.write('Even Numbers: '+the_evens);
+    }
+    getEvenNumbers();
+</script>
+</html>
