@@ -1,15 +1,11 @@
-# 
+# write a code to sort the object by id
 
-var dict={
+var obj={
    "id":4,"name":"abc",
    "id":10,"name":"ab2",
    "id":5,"name":"abc3",
    "id":6,"name":"abc5",
 };
-var items = object.keys(dict).map(function(key){
-  retuern [key,dict[key]];
-  });
-item.sort(function(first,second){
-   return second[1]-first[1];
+obj.sort(function (a,b){
+   return a.id-b.id;
 });
-console.log(items.slice(0,5));
